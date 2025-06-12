@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #0077cc;
+    color: white;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#map {
+    width: 80%;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid #0077cc;
+}
+/*-----------------------------------------------------------------------------
+
+css - menu 
+--------------------------------------------------------------------------------*/
+/* Styl dla rozwijanego menu */
+/* Styl dla rozwijanego menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;  /* Menu rozwija się w dół */
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;  /* Ustawienie menu nad wszystkim */
+    width: 200px; /* Dopasowanie szerokości */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;  /* Pokazanie menu po najechaniu */
+}
+
+.dropdown-menu li {
+    padding: 8px 10px;
+    white-space: nowrap;  /* Zapobiega łamaniu tekstu */
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #0077cc;
+}
+
+/*=======================================================*/
